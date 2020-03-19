@@ -1,7 +1,7 @@
 package com.habr.triangles;
 
 public class Shape {
-    double volume;
+    private double volume;
 
     public Shape(double volume) {
         this.volume = volume;
