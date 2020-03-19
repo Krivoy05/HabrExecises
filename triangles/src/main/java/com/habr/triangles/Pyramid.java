@@ -5,9 +5,12 @@ public class Pyramid extends Shape {
     private double h;
 
     public Pyramid(double s, double h) {
-        super(h*s*4/3);
         this.s = s;
         this.h = h;
     }
 
+    @Override
+    public double getVolume() {
+        return h*s*4/3;
+    }
 }

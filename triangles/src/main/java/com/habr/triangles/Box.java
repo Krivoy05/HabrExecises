@@ -8,8 +8,12 @@ public class Box extends Shape {
     private double available;
 
     public Box(double available) {
-        super(available);
         this.available = available;
+    }
+
+    @Override
+    public double getVolume() {
+        return available;
     }
 
     public boolean add(Shape figure)  {

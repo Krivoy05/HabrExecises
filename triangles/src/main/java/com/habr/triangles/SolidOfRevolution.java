@@ -1,10 +1,9 @@
 package com.habr.triangles;
 
-public class SolidOfRevolution extends Shape {
-    private double radius;
+public abstract class SolidOfRevolution extends Shape {
+    protected double radius;
 
-    public SolidOfRevolution(double volume,double radius) {
-        super(volume);
+    public SolidOfRevolution(double radius) {
         this.radius = radius;
     }
 
