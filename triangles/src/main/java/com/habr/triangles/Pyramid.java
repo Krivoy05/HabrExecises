@@ -1,6 +1,6 @@
 package com.habr.triangles;
 
-public class Pyramid extends Shape {
+public class Pyramid implements Shape {
     private double s;
     private double h;
 

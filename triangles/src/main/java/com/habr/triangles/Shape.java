@@ -1,6 +1,11 @@
 package com.habr.triangles;
 
-public abstract class Shape {
-    private double volume;
-    public abstract double getVolume();
+interface Shape extends Comparable {
+    double getVolume();
+
+
+    @Override
+    default int compareTo(Object o) {
+       return  Double.compare(getVolume(),((Shape) o).getVolume());
+    }
 }

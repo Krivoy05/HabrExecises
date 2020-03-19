@@ -1,6 +1,6 @@
 package com.habr.triangles;
 
-public abstract class SolidOfRevolution extends Shape {
+public abstract class SolidOfRevolution implements Shape {
     protected double radius;
 
     public SolidOfRevolution(double radius) {
@@ -10,4 +10,6 @@ public abstract class SolidOfRevolution extends Shape {
     public double getRadius() {
         return radius;
     }
+
+
 }
