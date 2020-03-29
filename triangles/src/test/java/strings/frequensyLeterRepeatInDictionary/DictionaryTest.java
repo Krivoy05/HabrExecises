@@ -26,4 +26,17 @@ class DictionaryTest {
 
     }
 
+    @Test
+    void readFromTextFile() {
+        Dictionary dictionary = new Dictionary();
+        String filePath = "src/Dictionary.txt";
+        dictionary.readFromTextFile(filePath);
+        int dictoinarySize = dictionary.getDictionary().size();
+        Assertions.assertEquals(194433,dictoinarySize);
+    }
+
+    @Test
+    void writeToTextFile() {
+
+    }
 }
