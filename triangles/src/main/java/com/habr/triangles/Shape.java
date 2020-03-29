@@ -1,13 +1,11 @@
 package com.habr.triangles;
 
-public class Shape {
-    private double volume;
+interface Shape extends Comparable {
+    double getVolume();
 
-    public Shape(double volume) {
-        this.volume = volume;
-    }
 
-    public double getVolume() {
-        return volume;
+    @Override
+    default int compareTo(Object o) {
+       return  Double.compare(getVolume(),((Shape) o).getVolume());
     }
 }
